@@ -43,9 +43,38 @@ It keeps you motivated with **quests, XP, streaks, progress tracking, and now Pa
 
 ---
 
-## 📂 Project Structure
-
-
+fitness-adventure/
+│
+├── bg.png
+├── default.png
+├── favicon.png
+├── speed.png
+├── warrior.png
+├── yoga.png
+│
+├── fitness_db.sql
+│
+├── index.html
+├── dashboard.php
+├── profile.php
+├── leaderboard.php
+├── onboarding.php
+├── welcome.php
+│
+├── login.html
+├── login.php
+├── signup.html
+├── signup.php
+├── logout.php
+├── logout1.php
+│
+├── quests.php
+├── reset_quests.php
+├── update_quest.php
+├── update_monthly_quest.php
+│
+├── party.php
+└── party_actions.php
 
 ---
 
