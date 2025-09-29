@@ -105,7 +105,7 @@ Place folder inside htdocs/ (XAMPP)
 
 Start Apache + MySQL in XAMPP
 
-Visit: http://localhost:3307/fitness-adventure/login.html
+Visit: [(https://sachin-deepak-s.github.io/fitness-adventure/)]
 
 🎯 Future Enhancements
 
