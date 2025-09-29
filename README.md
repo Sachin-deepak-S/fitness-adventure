@@ -105,7 +105,7 @@ Place folder inside htdocs/ (XAMPP)
 
 Start Apache + MySQL in XAMPP
 
-Visit: [(https://sachin-deepak-s.github.io/fitness-adventure/)]
+Visit: https://sachin-deepak-s.github.io/fitness-adventure/
 
 🎯 Future Enhancements
 
