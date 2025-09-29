@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Web - Entry</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url("bg.png") no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.55);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-box {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    .logo {
+      width: 90px;
+      margin-bottom: 10px;
+    }
+
+    .login-box {
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 16px;
+      text-align: center;
+      width: 300px;
+      backdrop-filter: blur(12px);
+    }
+
+    .login-box h2 {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+  background: linear-gradient(90deg, #005bea, #00c6fb);
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-box button:hover {
+      transform: scale(1.05);
+    }
+
+    .small {
+      color: #ddd;
+      margin: 15px 0;
+      font-size: 14px;
+    }
+
+    .small a {
+      color: #00f5ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="logo-box">
+  <img src="favicon.png" alt="FitJourney Logo" class="logo">
+      <h1>FitJourney</h1>
+      <p>Transform Your Body. Transform Your Life.</p>
+    </div>
+
+    <div class="login-box">
+      <h2>Welcome Back, Champion!</h2>
+      <form action="login.php" method="post">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Proceed to My Account</button>
+      </form>
+      <p class="small">Don’t have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Web - Sign Up</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url("bg.png") no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.55);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-box {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 90px;
+      margin-bottom: 10px;
+    }
+
+    .signup-box {
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 16px;
+      text-align: center;
+      width: 370px;
+      backdrop-filter: blur(12px);
+      max-height: 85vh;
+      overflow-y: auto;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .signup-box h2 {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .signup-box input,
+    .signup-box select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .signup-box button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #005bea, #00c6fb);
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .signup-box button:hover:not(:disabled) {
+      transform: scale(1.05);
+    }
+
+    .signup-box button:disabled {
+      background: #555;
+      cursor: not-allowed;
+    }
+
+    .small {
+      color: #ddd;
+      margin: 15px 0;
+      font-size: 14px;
+    }
+
+    .small a {
+      color: #00f5ff;
+      text-decoration: none;
+    }
+
+    /* Steps */
+    .step {
+      display: none;
+    }
+
+    .step.active {
+      display: block;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .error {
+      color: #ff6b6b;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    /* Toggle pill buttons */
+    .toggle-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 15px 0;
+      justify-content: center;
+    }
+
+    .toggle-group input[type="checkbox"] {
+      display: none;
+    }
+
+    .toggle-group label {
+      padding: 10px 18px;
+      border-radius: 50px;
+      border: 2px solid #00c6fb;
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.3s;
+      background: rgba(255,255,255,0.1);
+    }
+
+    .toggle-group input[type="checkbox"]:checked + label {
+      background: linear-gradient(90deg, #005bea, #00c6fb);
+      border-color: #00c6fb;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(0,198,251,0.4);
+    }
+
+    /* Back button */
+    .back-btn {
+      padding: 12px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 8px;
+      background: #444;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+    }
+
+    .back-btn:hover {
+      background: #666;
+    }
+
+    /* Progress bar */
+    .progressbar {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      counter-reset: step;
+    }
+
+    .progressbar li {
+      list-style: none;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .progressbar li::before {
+      counter-increment: step;
+      content: counter(step);
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border: 2px solid #aaa;
+      display: block;
+      text-align: center;
+      margin: 0 auto 10px auto;
+      border-radius: 50%;
+      background: transparent;
+      color: #fff;
+    }
+
+    .progressbar li.active {
+      color: #00c6fb;
+    }
+
+    .progressbar li.active::before {
+      border-color: #00c6fb;
+      background: linear-gradient(90deg, #005bea, #00c6fb);
+    }
+
+    .progressbar li::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #aaa;
+      top: 15px;
+      left: -50%;
+      z-index: -1;
+    }
+
+    .progressbar li:first-child::after {
+      content: none;
+    }
+
+    .progressbar li.active + li::after {
+      background: #00c6fb;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="logo-box">
+      <img src="favicon.png" alt="FitJourney Logo" class="logo">
+      <h1>FitJourney</h1>
+      <p>Transform Your Body. Transform Your Life.</p>
+    </div>
+
+    <div class="signup-box">
+      <!-- Progress bar -->
+      <ul class="progressbar" id="progressbar">
+        <li class="active">Basic Info</li>
+        <li>Personal</li>
+        <li>Goals</li>
+      </ul>
+
+      <h2>Join FitJourney Today!</h2>
+      <form id="signupForm" action="signup.php" method="post">
+        
+        <!-- Step 1: Basic Info -->
+        <div class="step active" id="step1">
+          <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+          <input type="password" name="password" id="password" placeholder="Password" required>
+          <input type="password" name="confirm" id="confirm" placeholder="Confirm Password" required>
+          <p id="error1" class="error"></p>
+          <button type="button" id="nextBtn1" onclick="nextStep(1)" disabled>Next</button>
+        </div>
+
+        <!-- Step 2: Personal Details -->
+        <div class="step" id="step2">
+          <input type="number" name="age" placeholder="Age" min="10" max="100">
+          <select name="gender">
+            <option value="">Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+
+          <select name="activity_level">
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+
+          <button type="button" class="back-btn" onclick="goBack(2)">⬅ Back</button>
+          <button type="button" onclick="nextStep(2)">Next</button>
+        </div>
+
+        <!-- Step 3: Preferences & Goals -->
+        <div class="step" id="step3">
+          <select name="goal">
+            <option>Weight loss</option>
+            <option>Muscle gain</option>
+            <option>General health</option>
+            <option>Endurance</option>
+          </select>
+
+          <div class="toggle-group">
+            <input type="checkbox" id="pref-gym" name="preferences[]" value="Gym workouts">
+            <label for="pref-gym">Gym workouts</label>
+
+            <input type="checkbox" id="pref-home" name="preferences[]" value="Home workouts">
+            <label for="pref-home">Home workouts</label>
+
+            <input type="checkbox" id="pref-yoga" name="preferences[]" value="Yoga">
+            <label for="pref-yoga">Yoga</label>
+
+            <input type="checkbox" id="pref-other" name="preferences[]" value="Other">
+            <label for="pref-other">Other</label>
+          </div>
+
+          <input type="number" step="0.01" name="height_cm" placeholder="Height (cm)">
+          <input type="number" step="0.01" name="weight_kg" placeholder="Weight (kg)">
+          <input type="text" name="target_goal" placeholder="Target Goal">
+
+          <button type="button" class="back-btn" onclick="goBack(3)">⬅ Back</button>
+          <button type="submit">Create My Account</button>
+        </div>
+      </form>
+
+      <p class="small">Already have an account? <a href="login.html">Sign In</a></p>
+    </div>
+  </div>
+
+  <script>
+    function updateProgress(step) {
+      const steps = document.querySelectorAll("#progressbar li");
+      steps.forEach((s, i) => {
+        s.classList.toggle("active", i < step);
+      });
+    }
+
+    function nextStep(currentStep) {
+      if (currentStep === 1) {
+        const fullname = document.getElementById("fullname").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value;
+        const confirm = document.getElementById("confirm").value;
+        const error = document.getElementById("error1");
+
+        if (!fullname || !email || !password || !confirm) {
+          error.textContent = "⚠️ Please fill all fields!";
+          return;
+        }
+        if (password !== confirm) {
+          error.textContent = "⚠️ Passwords do not match!";
+          return;
+        }
+        error.textContent = "";
+      }
+
+      document.getElementById("step" + currentStep).classList.remove("active");
+      document.getElementById("step" + (currentStep + 1)).classList.add("active");
+      updateProgress(currentStep + 1);
+    }
+
+    function goBack(currentStep) {
+      document.getElementById("step" + currentStep).classList.remove("active");
+      document.getElementById("step" + (currentStep - 1)).classList.add("active");
+      updateProgress(currentStep - 1);
+    }
+
+    // Enable/disable Next button dynamically
+    const inputsStep1 = document.querySelectorAll("#step1 input");
+    const nextBtn1 = document.getElementById("nextBtn1");
+
+    inputsStep1.forEach(input => {
+      input.addEventListener("input", () => {
+        const fullname = document.getElementById("fullname").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value;
+        const confirm = document.getElementById("confirm").value;
+
+        nextBtn1.disabled = !(fullname && email && password && confirm);
+      });
+    });
+  </script>
+</body>
+</html>

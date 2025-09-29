@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitJourney - Welcome</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: url("fitness-bg.jpg") no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    /* 🔹 Animated gradient overlay */
+    .gradient-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 20% 20%, rgba(0,198,251,0.3), transparent 60%),
+                  radial-gradient(circle at 80% 40%, rgba(0,91,234,0.3), transparent 60%),
+                  radial-gradient(circle at 40% 80%, rgba(0,255,200,0.25), transparent 60%);
+      animation: moveGradient 15s linear infinite alternate;
+      z-index: 0;
+    }
+
+    @keyframes moveGradient {
+      0% { transform: translate(0, 0); }
+      50% { transform: translate(-20%, -10%); }
+      100% { transform: translate(10%, 20%); }
+    }
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.65);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+      position: relative;
+      z-index: 1;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+      width: 100px;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      max-width: 500px;
+      line-height: 1.5;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s;
+      border: none;
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, #005bea, #00c6fb);
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(0,198,251,0.5);
+    }
+
+    .btn-primary:hover {
+      transform: scale(1.07);
+      box-shadow: 0 6px 20px rgba(0,198,251,0.8);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+      border: 2px solid #00c6fb;
+    }
+
+    .btn-secondary:hover {
+      background: #00c6fb;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      text-align: center;
+      width: 100%;
+      font-size: 14px;
+      color: #ddd;
+      z-index: 2;
+    }
+
+    /* ✅ Responsive styles */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+        max-width: 90%;
+      }
+      .btn {
+        padding: 12px 26px;
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        width: 70px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 0.95rem;
+      }
+      .btn-group {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .btn {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 🔹 Gradient animation -->
+  <div class="gradient-overlay"></div>
+
+  <div class="overlay">
+    <img src="favicon.png" alt="FitJourney Logo" class="logo">
+    <h1>FitJourney</h1>
+    <p>Transform Your Body. Transform Your Life.  
+       Join our community and take the first step towards a healthier you.</p>
+
+    <div class="btn-group">
+      <a href="signup.html" class="btn btn-primary">🚀 Get Started</a>
+      <a href="login.html" class="btn btn-secondary">🔑 Log In</a>
+    </div>
+  </div>
+
+  <footer>© 2025 FitJourney. All rights reserved.</footer>
+</body>
+</html>
