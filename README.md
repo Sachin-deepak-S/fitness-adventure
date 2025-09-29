@@ -43,6 +43,8 @@ It keeps you motivated with **quests, XP, streaks, progress tracking, and now Pa
 
 ---
 
+## 📂 Project Structure
+
 fitness-adventure/
 │
 ├── bg.png
