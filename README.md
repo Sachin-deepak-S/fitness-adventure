@@ -51,7 +51,9 @@ fitness-adventure/
 │ ├── quest.png
 │ ├── signup1.png
 │ ├── signup2.png
-│ └── signup3.png
+│ ├── signup3.png
+│ ├── avatarselect.png # (if present)
+│ └── welcome.png # (if present)
 │
 ├── fitness_db.sql
 ├── index.html
@@ -95,6 +97,14 @@ fitness-adventure/
   ![Signup 3](Screenshot/signup3.png)  
   _Final setup step – confirmation and onboarding into the fitness journey._  
 
+- **Avatar Select**  
+  ![Avatar Select](Screenshot/avatarselect.png)  
+  _Choose your avatar to represent your fitness journey._  
+
+- **Welcome Page**  
+  ![Welcome](Screenshot/welcome.png)  
+  _Warm welcome screen after signup completion._  
+
 ---
 
 ### 🏠 Dashboard & Profile
@@ -124,13 +134,13 @@ fitness-adventure/
 ---
 
 ### 🏆 Leaderboard
-- **Leaderboard 1st half**  
+- **Leaderboard (Top users)**  
   ![Leaderboard 1](Screenshot/leaderboard1.png)  
   _Shows ranking of top users based on XP and streaks._  
 
-- **Leaderboard 2nd half**  
+- **Leaderboard (Extended view)**  
   ![Leaderboard 2](Screenshot/leaderboard2.png)  
-  _Alternative view of leaderboard with detailed stats for comparison._  
+  _Detailed leaderboard view with more user stats for comparison._  
 
 ---
 
