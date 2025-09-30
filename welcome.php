@@ -176,19 +176,19 @@ $conn->close();
         <div class="avatar-grid">
 
           <div class="avatar-card" onclick="selectAvatar(this, 'Warrior')">
-            <img src="avatar/warrior.png" alt="Warrior Avatar">
+            <img src="warrior.png" alt="Warrior Avatar">
             <div class="avatar-title">Warrior</div>
             <div class="avatar-desc">Strength & Power</div>
           </div>
 
           <div class="avatar-card" onclick="selectAvatar(this, 'Ninja')">
-            <img src="avatar/speed.png" alt="Ninja Avatar">
+            <img src="speed.png" alt="Ninja Avatar">
             <div class="avatar-title">Ninja</div>
             <div class="avatar-desc">Agility & Speed</div>
           </div>
 
           <div class="avatar-card" onclick="selectAvatar(this, 'Monk')">
-            <img src="avatar/yoga.png" alt="Monk Avatar">
+            <img src="yoga.png" alt="Monk Avatar">
             <div class="avatar-title">Monk</div>
             <div class="avatar-desc">Balance & Mindfulness</div>
           </div>
