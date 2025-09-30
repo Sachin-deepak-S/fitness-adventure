@@ -37,43 +37,45 @@ It keeps you motivated with **quests, XP, streaks, progress tracking, and Party 
 
 ## 📂 Project Structure
 
+## 📂 Project Structure
+
 fitness-adventure/
+├─ Screenshots/ (UI previews)
+│  ├─ dashboard.png
+│  ├─ index.png
+│  ├─ leaderboard1.png
+│  ├─ leaderboard2.png
+│  ├─ login.png
+│  ├─ party.png
+│  ├─ profile1.png
+│  ├─ profile2.png
+│  ├─ quest.png
+│  ├─ signup1.png
+│  ├─ signup2.png
+│  ├─ signup3.png
+│  ├─ avatarselect.png
+│  └─ welcome.png
 │
-├── Screenshots/ (UI previews)
-│ ├── dashboard.png
-│ ├── index.png
-│ ├── leaderboard1.png
-│ ├── leaderboard2.png
-│ ├── login.png
-│ ├── party.png
-│ ├── profile1.png
-│ ├── profile2.png
-│ ├── quest.png
-│ ├── signup1.png
-│ ├── signup2.png
-│ ├── signup3.png
-│ ├── avatarselect.png # (if present)
-│ └── welcome.png # (if present)
-│
-├── fitness_db.sql
-├── index.html
-├── dashboard.php
-├── profile.php
-├── leaderboard.php
-├── onboarding.php
-├── welcome.php
-├── login.html
-├── login.php
-├── signup.html
-├── signup.php
-├── logout.php
-├── logout1.php
-├── quests.php
-├── reset_quests.php
-├── update_quest.php
-├── update_monthly_quest.php
-├── party.php
-└── party_actions.php
+├─ fitness_db.sql
+├─ index.html
+├─ dashboard.php
+├─ profile.php
+├─ leaderboard.php
+├─ onboarding.php
+├─ welcome.php
+├─ login.html
+├─ login.php
+├─ signup.html
+├─ signup.php
+├─ logout.php
+├─ logout1.php
+├─ quests.php
+├─ reset_quests.php
+├─ update_quest.php
+├─ update_monthly_quest.php
+├─ party.php
+└─ party_actions.php
+
 
 
 ---
