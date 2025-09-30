@@ -98,7 +98,7 @@ fitness-adventure/
   _Final setup step – confirmation and onboarding into the fitness journey._  
 
 - **Avatar Select**  
-  ![Avatar Select](Screenshot/avatarselect.png)  
+  ![Avatar Select](Screenshot/avatarselect..png)  
   _Choose your avatar to represent your fitness journey._  
 
 - **Welcome Page**  
