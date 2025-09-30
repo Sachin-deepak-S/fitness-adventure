@@ -84,7 +84,6 @@ fitness-adventure/
 
 ## 📸 Screenshots  
 
-*(Add a `/screenshots` folder and place PNGs of your UI there)*  
 
 - Login → ![Login](screenshots/login.png)  
 - Dashboard → ![Dashboard](screenshots/dashboard.png)  
