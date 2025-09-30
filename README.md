@@ -176,6 +176,7 @@ Start Apache + MySQL in XAMPP
 
 Visit: http://localhost:3307/fitness-adventure/index.html
 
+---
 🎯 Future Enhancements
 Party chat & collaboration feed
 
@@ -185,6 +186,7 @@ Global leaderboard of parties
 
 Mobile-first UI redesign
 
+---
 📜 License
 MIT License © 2025
 Free to use, modify, and share.
