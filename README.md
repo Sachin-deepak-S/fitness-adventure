@@ -38,7 +38,7 @@ It keeps you motivated with **quests, XP, streaks, progress tracking, and Party 
 ## 📂 Project Structure
 
 ## 📂 Project Structure
-
+```
 fitness-adventure/
 ├─ 📸 Screenshots/ (UI previews)
 │  ├─ 🖥️ dashboard.png
@@ -77,7 +77,7 @@ fitness-adventure/
 └─ ⚡ party_actions.php
 
 
-
+```
 
 ---
 
