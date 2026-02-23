@@ -73,11 +73,11 @@
 
 | Login | Signup (Step 1) | Signup (Step 2) |
 |-------|----------------|----------------|
-| ![Login](Screenshot/login.png) | ![Signup 1](Screenshot/signup1.png) | ![Signup 2](Screenshot/signup2.png) |
+| ![Login](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/login.png) | ![Signup 1](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/signup1.png) | ![Signup 2](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/signup2.png) |
 
 | Signup (Step 3) | Avatar Select | Welcome |
 |----------------|--------------|---------|
-| ![Signup 3](Screenshot/signup3.png) | ![Avatar](Screenshot/avatarselect.png) | ![Welcome](Screenshot/welcome.png) |
+| ![Signup 3](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/signup3.png) | ![Avatar](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/avatarselect.png) | ![Welcome](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/welcome.png) |
 
 ---
 
@@ -85,7 +85,7 @@
 
 | Dashboard | Profile — View | Profile — Edit |
 |-----------|---------------|----------------|
-| ![Dashboard](Screenshot/dashboard.png) | ![Profile 1](Screenshot/profile1.png) | ![Profile 2](Screenshot/profile2.png) |
+| ![Dashboard](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/dashboard.png) | ![Profile 1](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/profile1.png) | ![Profile 2](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/profile2.png) |
 
 ---
 
@@ -93,7 +93,7 @@
 
 | Quests | Party System |
 |--------|-------------|
-| ![Quests](Screenshot/quest.png) | ![Party](Screenshot/party.png) |
+| ![Quests](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/quest.png) | ![Party](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/party.png) |
 
 ---
 
@@ -101,7 +101,7 @@
 
 | Top Rankings | Extended View |
 |-------------|--------------|
-| ![Leaderboard 1](Screenshot/leaderboard1.png) | ![Leaderboard 2](Screenshot/leaderboard2.png) |
+| ![Leaderboard 1](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/leaderboard1.png) | ![Leaderboard 2](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/leaderboard2.png) |
 
 ---
 
@@ -109,7 +109,7 @@
 ```
 fitness-adventure/
 │
-├── 📸 Screenshots/              # UI preview images
+├── 📸 Screenshot/               # UI preview images
 │
 ├── 🗄️  fitness_db.sql           # Database schema & seed data
 │
@@ -162,7 +162,7 @@ fitness-adventure/
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/yourusername/fitness-adventure.git
+git clone https://github.com/Sachin-deepak-S/fitness-adventure.git
 ```
 
 **2. Move to your server root**
