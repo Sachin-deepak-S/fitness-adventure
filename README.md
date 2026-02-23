@@ -73,11 +73,11 @@
 
 | Login | Signup (Step 1) | Signup (Step 2) |
 |-------|----------------|----------------|
-| ![Login](Screenshots/login.png) | ![Signup 1](Screenshots/signup1.png) | ![Signup 2](Screenshots/signup2.png) |
+| ![Login](Screenshot/login.png) | ![Signup 1](Screenshot/signup1.png) | ![Signup 2](Screenshot/signup2.png) |
 
 | Signup (Step 3) | Avatar Select | Welcome |
 |----------------|--------------|---------|
-| ![Signup 3](Screenshots/signup3.png) | ![Avatar](Screenshots/avatarselect.png) | ![Welcome](Screenshots/welcome.png) |
+| ![Signup 3](Screenshot/signup3.png) | ![Avatar](Screenshot/avatarselect.png) | ![Welcome](Screenshot/welcome.png) |
 
 ---
 
@@ -85,7 +85,7 @@
 
 | Dashboard | Profile — View | Profile — Edit |
 |-----------|---------------|----------------|
-| ![Dashboard](Screenshots/dashboard.png) | ![Profile 1](Screenshots/profile1.png) | ![Profile 2](Screenshots/profile2.png) |
+| ![Dashboard](Screenshot/dashboard.png) | ![Profile 1](Screenshot/profile1.png) | ![Profile 2](Screenshot/profile2.png) |
 
 ---
 
@@ -93,7 +93,7 @@
 
 | Quests | Party System |
 |--------|-------------|
-| ![Quests](Screenshots/quest.png) | ![Party](Screenshots/party.png) |
+| ![Quests](Screenshot/quest.png) | ![Party](Screenshot/party.png) |
 
 ---
 
@@ -101,7 +101,7 @@
 
 | Top Rankings | Extended View |
 |-------------|--------------|
-| ![Leaderboard 1](Screenshots/leaderboard1.png) | ![Leaderboard 2](Screenshots/leaderboard2.png) |
+| ![Leaderboard 1](Screenshot/leaderboard1.png) | ![Leaderboard 2](Screenshot/leaderboard2.png) |
 
 ---
 
