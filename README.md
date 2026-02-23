@@ -160,7 +160,7 @@ Create a database fitness_db
 Import the provided fitness_db.sql
 
 3. Update DB connection settings in PHP files:
-
+```
 php
 Copy code
 $servername = "localhost";
@@ -168,6 +168,7 @@ $username   = "root";
 $password   = "1234"; 
 $dbname     = "fitness_db";
 $port       = 3307;
+```
 4. Run on local server:
 
 Place folder inside htdocs/ (XAMPP)
