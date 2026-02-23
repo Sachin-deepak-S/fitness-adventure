@@ -77,7 +77,7 @@
 
 | Signup (Step 3) | Avatar Select | Welcome |
 |----------------|--------------|---------|
-| ![Signup 3](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/signup3.png) | ![Avatar](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/avatarselect.png) | ![Welcome](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/welcome.png) |
+| ![Signup 3](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/signup3.png) | ![Avatar](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/avatarselect..png) | ![Welcome](https://raw.githubusercontent.com/Sachin-deepak-S/fitness-adventure/main/Screenshot/welcome.png) |
 
 ---
 
