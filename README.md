@@ -1,193 +1,226 @@
-# Fitness Adventure 🏋️‍♂️🎮🎉
+<div align="center">
 
-**Fitness Adventure** is a gamified fitness tracker built using **PHP + MySQL**.  
-It keeps you motivated with **quests, XP, streaks, progress tracking, and Party mode** – where you can team up with friends for shared goals.  
+# 🏋️‍♂️ Fitness Adventure
+
+**A gamified fitness tracker that turns your workouts into an RPG adventure**
+
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+*Level up your fitness with quests, XP, streaks, and party challenges — because working out alone is boring.*
+
+</div>
+
+---
+
+## 📋 Table of Contents
+
+- [Overview](#-overview)
+- [Features](#-features)
+- [Screenshots](#-screenshots)
+- [Project Structure](#-project-structure)
+- [Installation](#-installation--setup)
+- [Database Schema](#-database-schema)
+- [Future Enhancements](#-future-enhancements)
+- [License](#-license)
+
+---
+
+## 🌟 Overview
+
+**Fitness Adventure** is a PHP + MySQL web application that gamifies your fitness journey. Complete daily and weekly quests to earn XP, maintain streaks for consistency bonuses, and team up with friends in **Party Mode** for shared goals and friendly competition.
 
 ---
 
 ## 🚀 Features
 
-- **Authentication**
-  - User login & session management (`login.html`, `signup.html`, `logout.php`)
-- **Dashboard (`dashboard.php`)**
-  - Personalized user view after login
-  - Navigation to profile, quests, and parties
-- **Profile (`profile.php`)**
-  - Edit personal details (age, height, weight, goals, preferences)
-  - Change avatar (with upload support)
-  - View locked role field (admin/user)
-- **Quests (`quests.php`)**
-  - Daily/weekly quests for fitness activities
-  - Track completion & earn XP
-- **Gamification**
-  - XP system and target goals
-  - Streak tracking for consistency
-- **Party System (`party.php`)**
-  - Create or join a party with friends
-  - Shared quest progress & streaks
-  - Team leaderboard for fun competition
-- **Database (`fitness_db`)**
-  - `users` → stores profile & login info  
-  - `quests` → fitness quests list  
-  - `progress` → XP, streaks, goal tracking  
-  - `parties` → stores party groups  
-  - `party_members` → links users to their party  
+### 🔐 Authentication
+- Secure user login and session management
+- Multi-step signup with profile onboarding
+- Avatar selection and upload support
+
+### 📊 Dashboard
+- Personalized hub with quick stats at a glance
+- One-click navigation to quests, party, leaderboard, and profile
+
+### 👤 Profile Management
+- Edit personal details — age, height, weight, fitness goals
+- Upload or select a custom avatar
+- Role display (admin / user)
+
+### 🎯 Quests
+- Daily and weekly fitness challenges
+- Mark completions and earn XP rewards
+- Auto-reset system for recurring quests
+
+### 🎮 Gamification
+- **XP System** — earn points for every completed activity
+- **Streak Tracking** — stay consistent and build momentum
+- **Leaderboard** — compete with other users globally
+
+### 👥 Party System
+- Create or join a party with friends
+- Shared quest progress and team streaks
+- Party leaderboard for group competition
 
 ---
 
-## 📂 Project Structure
-
-## 📂 Project Structure
-```
-fitness-adventure/
-├─ 📸 Screenshots/ (UI previews)
-│  ├─ 🖥️ dashboard.png
-│  ├─ 🏠 index.png
-│  ├─ 🏆 leaderboard1.png
-│  ├─ 🏆 leaderboard2.png
-│  ├─ 🔑 login.png
-│  ├─ 👥 party.png
-│  ├─ 👤 profile1.png
-│  ├─ 👤 profile2.png
-│  ├─ 🎯 quest.png
-│  ├─ 📝 signup1.png
-│  ├─ 📝 signup2.png
-│  ├─ 📝 signup3.png
-│  ├─ 🎭 avatarselect.png
-│  └─ 👋 welcome.png
-│
-├─ 🗄️ fitness_db.sql
-├─ 🌐 index.html
-├─ 📊 dashboard.php
-├─ 👤 profile.php
-├─ 🏆 leaderboard.php
-├─ 🚀 onboarding.php
-├─ 👋 welcome.php
-├─ 🔑 login.html
-├─ 🔑 login.php
-├─ 📝 signup.html
-├─ 📝 signup.php
-├─ 🚪 logout.php
-├─ 🚪 logout1.php
-├─ 🎯 quests.php
-├─ ♻️ reset_quests.php
-├─ 🔄 update_quest.php
-├─ 🔄 update_monthly_quest.php
-├─ 👥 party.php
-└─ ⚡ party_actions.php
-
-
-```
-
----
-
-## 📸 Screenshots with Descriptions
+## 📸 Screenshots
 
 ### 🔑 Authentication
-- **Login Page**  
-  ![Login](Screenshot/login.png)  
-  _Simple login form where users enter email and password to access their dashboard._  
 
-- **Signup Step 1**  
-  ![Signup 1](Screenshot/signup1.png)  
-  _User details collection – basic info like name, email, and password._  
+| Login | Signup (Step 1) | Signup (Step 2) |
+|-------|----------------|----------------|
+| ![Login](Screenshots/login.png) | ![Signup 1](Screenshots/signup1.png) | ![Signup 2](Screenshots/signup2.png) |
 
-- **Signup Step 2**  
-  ![Signup 2](Screenshot/signup2.png)  
-  _Additional profile setup – age, height, weight, and fitness goals._  
-
-- **Signup Step 3**  
-  ![Signup 3](Screenshot/signup3.png)  
-  _Final setup step – confirmation and onboarding into the fitness journey._  
-
-- **Avatar Select**  
-  ![Avatar Select](Screenshot/avatarselect..png)  
-  _Choose your avatar to represent your fitness journey._  
-
-- **Welcome Page**  
-  ![Welcome](Screenshot/welcome.png)  
-  _Warm welcome screen after signup completion._  
+| Signup (Step 3) | Avatar Select | Welcome |
+|----------------|--------------|---------|
+| ![Signup 3](Screenshots/signup3.png) | ![Avatar](Screenshots/avatarselect.png) | ![Welcome](Screenshots/welcome.png) |
 
 ---
 
 ### 🏠 Dashboard & Profile
-- **Dashboard**  
-  ![Dashboard](Screenshot/dashboard.png)  
-  _Main hub after login – shows quick stats, navigation to quests, party, and profile._  
 
-- **Profile Page (Info View)**  
-  ![Profile 1](Screenshot/profile1.png)  
-  _Displays user details like name, age, weight, and fitness goals with avatar._  
-
-- **Profile Page (Edit Mode)**  
-  ![Profile 2](Screenshot/profile2.png)  
-  _Editable form to update profile info and upload a new avatar image._  
+| Dashboard | Profile — View | Profile — Edit |
+|-----------|---------------|----------------|
+| ![Dashboard](Screenshots/dashboard.png) | ![Profile 1](Screenshots/profile1.png) | ![Profile 2](Screenshots/profile2.png) |
 
 ---
 
 ### 🎯 Quests & Party
-- **Quests**  
-  ![Quests](Screenshot/quest.png)  
-  _Daily and weekly fitness challenges where users can mark completion and earn XP._  
 
-- **Party System**  
-  ![Party](Screenshot/party.png)  
-  _Collaborative party feature – users can create, join, or manage fitness parties._  
+| Quests | Party System |
+|--------|-------------|
+| ![Quests](Screenshots/quest.png) | ![Party](Screenshots/party.png) |
 
 ---
 
 ### 🏆 Leaderboard
-- **Leaderboard (Top users)**  
-  ![Leaderboard 1](Screenshot/leaderboard1.png)  
-  _Shows ranking of top users based on XP and streaks._  
 
-- **Leaderboard (Extended view)**  
-  ![Leaderboard 2](Screenshot/leaderboard2.png)  
-  _Detailed leaderboard view with more user stats for comparison._  
+| Top Rankings | Extended View |
+|-------------|--------------|
+| ![Leaderboard 1](Screenshots/leaderboard1.png) | ![Leaderboard 2](Screenshots/leaderboard2.png) |
+
+---
+
+## 📂 Project Structure
+```
+fitness-adventure/
+│
+├── 📸 Screenshots/              # UI preview images
+│
+├── 🗄️  fitness_db.sql           # Database schema & seed data
+│
+├── 🌐 index.html                # Landing page
+├── 👋 welcome.php               # Post-signup welcome screen
+├── 🚀 onboarding.php            # New user onboarding flow
+│
+├── 🔑 login.html                # Login form
+├── 🔑 login.php                 # Login handler
+├── 📝 signup.html               # Signup form
+├── 📝 signup.php                # Signup handler
+├── 🚪 logout.php                # Session logout
+├── 🚪 logout1.php               # Alternative logout
+│
+├── 📊 dashboard.php             # Main user dashboard
+├── 👤 profile.php               # Profile view & edit
+├── 🏆 leaderboard.php           # Global XP leaderboard
+│
+├── 🎯 quests.php                # Quest listing & completion
+├── ♻️  reset_quests.php          # Daily/weekly quest reset
+├── 🔄 update_quest.php          # Quest progress updater
+├── 🔄 update_monthly_quest.php  # Monthly quest handler
+│
+├── 👥 party.php                 # Party view & management
+└── ⚡ party_actions.php         # Party CRUD actions
+```
+
+---
+
+## 🗄️ Database Schema
+
+| Table | Description |
+|-------|-------------|
+| `users` | Stores login credentials, profile info, and avatar |
+| `quests` | Fitness quest definitions (daily/weekly/monthly) |
+| `progress` | Tracks XP, streaks, and goal completion per user |
+| `parties` | Party groups and metadata |
+| `party_members` | Maps users to their party |
 
 ---
 
 ## ⚡ Installation & Setup
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/fitness-adventure.git
-   cd fitness-adventure
-2. Import database:
+### Prerequisites
+- [XAMPP](https://www.apachefriends.org/) (or any Apache + PHP + MySQL stack)
+- PHP 7.4+
+- MySQL 5.7+
 
-Create a database fitness_db
+### Steps
 
-Import the provided fitness_db.sql
-
-3. Update DB connection settings in PHP files:
+**1. Clone the repository**
+```bash
+git clone https://github.com/yourusername/fitness-adventure.git
 ```
-php
-Copy code
+
+**2. Move to your server root**
+```bash
+# XAMPP (Windows)
+mv fitness-adventure/ C:/xampp/htdocs/
+
+# XAMPP (macOS)
+mv fitness-adventure/ /Applications/XAMPP/htdocs/
+```
+
+**3. Import the database**
+- Open **phpMyAdmin** → Create database `fitness_db`
+- Import `fitness_db.sql`
+
+**4. Configure database connection**
+
+Update the connection settings in your PHP files:
+```php
 $servername = "localhost";
 $username   = "root";
-$password   = "1234"; 
+$password   = "1234";
 $dbname     = "fitness_db";
 $port       = 3307;
 ```
-4. Run on local server:
 
-Place folder inside htdocs/ (XAMPP)
+**5. Launch the app**
+- Start **Apache** and **MySQL** in XAMPP Control Panel
+- Visit: [http://localhost/fitness-adventure/index.html](http://localhost/fitness-adventure/index.html)
 
-Start Apache + MySQL in XAMPP
-
-Visit: http://localhost:3307/fitness-adventure/index.html
-
----
-🎯 Future Enhancements
-Party chat & collaboration feed
-
-Party challenges (e.g., “Collect 500 XP as a team this week”)
-
-Global leaderboard of parties
-
-Mobile-first UI redesign
+> ⚠️ **Note:** The default MySQL port is `3306`. Update `$port` if yours differs.
 
 ---
-📜 License
+
+## 🔭 Future Enhancements
+
+- [ ] 💬 Party chat & collaboration feed
+- [ ] 🏆 Party-wide challenges (e.g., *"Collect 500 XP as a team this week"*)
+- [ ] 🌍 Global party leaderboard
+- [ ] 📱 Mobile-first UI redesign
+- [ ] 🔔 Push notifications for quest reminders
+- [ ] 📈 Progress charts and fitness analytics
+
+---
+
+## 📜 License
+```
 MIT License © 2025
-Free to use, modify, and share.
+
+Free to use, modify, and distribute.
+```
+
+---
+
+<div align="center">
+
+Made with ❤️ and way too many skipped leg days.
+
+⭐ **Star this repo if it helped you!** ⭐
+
+</div>
